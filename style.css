@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+}
+.hidden{
+    display: none;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #EEF9BF;
+}
+
+.tittle {
+    position: absolute;
+    width: 540px;
+    height: 63px;
+    /* left: 285px; */
+    top: 40px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 66px;
+    letter-spacing: -0.004em;
+    color: #75B79E;
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 117px;
+    min-height: 146px;
+    border: 1px solid #99CEA8;
+    border-radius: 5px;
+    background-color: #A7E9AF;
+    margin: 17px 17px 17px 17px;
+    position: relative;
+    transform-style: preserve-3d;
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, .3);
+    transform: scale(1);
+    transition: transform .5s;
+}
+
+.card.flip {
+    transform: rotateY(180deg);
+}
+
+.card:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+  }
+
+.front-face,
+.back-face {
+    position: absolute;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+}
+
+.front-face {
+    transform: rotateY(180deg);
+}
+
+.deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    min-width: 34.64vw;
+    top: 150px;
+    left: 109.5px;
+    right: 109.5px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+@media only screen and (min-width: 521px) {
+    h1 {
+      font-size: 39px;
+    }
+    .container {
+      left: 93.86px;
+      right: 93.86px;
+    }
+  }
+  @media only screen and (min-width: 672px) {
+    h1 {
+      font-size: 42px;
+    }
+    .container {
+      left: 95.22px;
+      right: 95.22px;
+    }
+  }
+  @media only screen and (min-width: 823px) {
+    h1 {
+      font-size: 45px;
+    }
+    .container {
+      left: 96.58px;
+      right: 96.58px;
+    }
+  }
+  @media only screen and (min-width: 974px) {
+    h1 {
+      font-size: 48px;
+    }
+    .container {
+      left: 97.94px;
+      right: 97.94px;
+    }
+  }
+  @media only screen and (min-width: 1125px) {
+    h1 {
+      font-size: 51px;
+    }
+    .container {
+      left: 99.3px;
+      right: 99.3px;
+    }
+  }
+  @media only screen and (min-width: 1276px) {
+    h1 {
+      font-size: 56px;
+    }
+    .container {
+      left: 102px;
+      right: 102px;
+    }
+  }
